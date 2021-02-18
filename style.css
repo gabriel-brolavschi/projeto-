@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Shadows Into Light", sans-serif;
+}
+
+body{
+    background: #3f3f3f ;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-width: 100vh;
+}
+
+main{
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    color: #d6bdff;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+main .social-media{
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a{
+    text-decoration: none;
+}
+
+main .social-media img{
+    width: 36px;
+    margin-left: 1.5rem;
+}
+
+main .social-media a:first-child img{
+    margin-left: 0;
+}
+
+main .alternative{
+    margin-top: 1rem;
+}
+
+main .alternative span{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    bottom: 50%;
+    right: 50px;
+}
+
+main .alternative span::after{
+    left: 50px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input{
+    background: #d3b8ff8a; 
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(255, 255, 255);
+    font-size: 1.25rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+main form input[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    background: #b98eff;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover{
+    background: #6200ff;
+    color: white;
+}
+
+section.images{
+    display: flex;
+    align-items: flex-end;
+    padding: 10rem;
+}
+
+section.images .circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #e8cbc0b0, #5200d69a);
+    clip-path: circle(40% at 90%);
+    z-index: -1; 
+}
