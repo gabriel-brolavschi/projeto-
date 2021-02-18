@@ -13,53 +13,61 @@ body{
     color: white;
     font-weight: 500;
     display: flex;
-    min-width: 100vh;
 }
 
 main{
-    width: 65vw;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main{
+    max-width: 50%;
+    min-width: 303px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px 0 0 17%;
 }
 
-main h1{
+.main h1{
     color: #d6bdff;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-main .social-media{
+.main .social-media{
     display: flex;
     align-content: center;
 }
 
-main .social-media a{
+.main .social-media a{
     text-decoration: none;
 }
 
-main .social-media img{
+.main .social-media img{
     width: 36px;
     margin-left: 1.5rem;
 }
 
-main .social-media a:first-child img{
+.main .social-media a:first-child img{
     margin-left: 0;
 }
 
-main .alternative{
+.main .alternative{
     margin-top: 1rem;
 }
 
-main .alternative span{
+.main .alternative span{
     font-size: 1.3rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.3);
     position: relative;
 }
 
-main .alternative span::before, main .alternative span::after{
+.main .alternative span::before, .main .alternative span::after{
     position: absolute;
     content: '';
     height: 3px;
@@ -69,27 +77,22 @@ main .alternative span::before, main .alternative span::after{
     right: 50px;
 }
 
-main .alternative span::after{
+.main .alternative span::after{
     left: 50px;
 }
 
-main form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-main form label{
+.main form label{
     display: flex;
     flex-direction: column;
 }
 
-main form label span{
+.main form label span{
     font-size: 1.1rem;
     margin-top: 2rem;
 }
 
-main form input{
+.main form input{
     background: #d3b8ff8a; 
     width: 300px;
     height: 50px;
@@ -103,28 +106,29 @@ main form input{
     font-family: sans-serif;
 }
 
-main form input[type="submit"]{
+.main form input[type="submit"]{
     cursor: pointer;
     width: 50%;
-    margin-top: 4rem;
+    margin-top: 3rem;
     background: #b98eff;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
     transition: all .3s ease-in-out;
 }
 
-main form input[type="submit"]:hover{
+.main form input[type="submit"]:hover{
     background: #6200ff;
     color: white;
 }
-
-section.images{
-    display: flex;
-    align-items: flex-end;
-    padding: 10rem;
+.images-container{
+    /* position: relative; */
 }
-
-section.images .circle{
+.images{
+    /* display: flex; */
+    /* align-items: flex-end; */
+    /* padding: 10rem; */
+}
+.circle {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -134,3 +138,16 @@ section.images .circle{
     clip-path: circle(40% at 90%);
     z-index: -1; 
 }
+
+@media only screen and (max-width: 1024px) {
+    .images-container{
+        display: none;
+    }
+    main{
+    margin: 0 auto 20px auto;
+
+    }
+    .main{
+        margin: 0 auto;
+    }
+  }
