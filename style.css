@@ -8,6 +8,7 @@
     font-family: "Shadows Into Light", sans-serif;
 }
 
+
 body{
     background: #3f3f3f ;
     color: white;
@@ -93,10 +94,6 @@ main{
     margin-top: 2rem;
 }
 
-.main form label[for="carregar"]{
-    margin-left: -26.5%;
-}
-
 .main form input{
     background: #d3b8ff8a; 
     width: 300px;
@@ -111,17 +108,18 @@ main{
     font-family: sans-serif;
 }
 
+/* login */
 .main form input[value="Entrar"]{
     cursor: pointer;
     width: 45%;
     margin-top: 3rem;
-    margin-right: 5%;
+    margin-right: 7%;
     background: #b98eff;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
     transition: all .3s ease-in-out;
 }
-
+/* index */
 .main form input[value="Inscreva-se"]{
     cursor: pointer;
     width: 45%;
@@ -132,11 +130,10 @@ main{
     font-size: 1.1rem;
     transition: all .3s ease-in-out;
 }
-
-.main form label input[value="Cadastrar"]{
+ /* login */
+.main form input[value="Cadastrar"]{
     cursor: pointer;
-    width: 55%;
-    margin-top: 0.5rem;
+    width: 45%;
     background: #b98eff;
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
@@ -159,14 +156,6 @@ main{
     z-index: -1; 
 }
 
-.cadastro{
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-top: 13%;
-}
-
 @media only screen and (max-width: 1024px) {
     .images-container{
         display: none;
@@ -179,28 +168,29 @@ main{
         margin: 0 auto;
     }
   }
-
+/* login */
 @media (max-width:1500px) and (min-width:1024px){
     
     .image img{
-        margin: 17vh -1vw 0 0;
+        margin: 19vh -1vw 0 0;
+        height: 30rem;
     }
 }
-
+/* login */
 @media only screen and (min-width: 1500px){
     .image img{
         margin: 17vh 5vw 0 0;
     }
 }
 
-
+/* index */
 @media (max-width:1500px) and (min-width:1024px){
     
     .images img{
         margin: 17vh -5vw 0 0;
     }
 }
-
+/* index */
 @media only screen and (min-width: 1500px){
     .images img{
         margin: 17vh 5vw 0 0;
