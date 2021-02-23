@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Shadows Into Light", sans-serif;
+}
+
+
+body{
+    background: #3f3f3f ;
+    color: white;
+    font-weight: 500;
+    display: flex;
+}
+
+main{
+    width: 99%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.main{
+    max-width: 100%;
+    min-width: 303px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main form input[name="pesquisa"]{
+    background: #d3b8ff8a; 
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 1rem;
+    height: 50px;
+    padding: 0 0.5rem;
+    outline: none;
+    color: rgba(255, 255, 255);
+    font-size: 1.25rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.main form input[value="Cadastrar"]{
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    background: #b98eff;
+    border: 2px solid #000;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+    font-family: sans-serif;
+}
+
+.main form input[value="Entrar"]{
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    background: #b98eff;
+    border: 2px solid #000;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+    font-family: sans-serif;
+}   
+
+.main form input[type="button"]:hover{
+    background: #6200ff;
+    color: white;
+}
+
+.lupa{
+    width: 20px;
+    height: 20px;
+    margin-left: -3%;
+    margin-right: 2%;
+}
+
+@media only screen and (min-width: 1600px){
+    .main form input[name="pesquisa"]{
+        width: 60vw;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 1600px){
+    .main form input[name="pesquisa"]{
+        width: 55vw;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width:1360px){
+    
+    .main form input[name="pesquisa"]{
+        width: 45vw;
+        transition: all .3s ease-in-out;
+    }
+}
+@media only screen and (max-width: 1024px) {
+
+    
+    .main form input[name="pesquisa"]{ 
+        width: 42vw;
+        transition: all .3s ease-in-out;
+    }
+
+    .lupa{
+        margin-left: -5%;
+        margin-right: 3%;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .main form input[name="pesquisa"]{ 
+        width: 40vw;
+        transition: all .3s ease-in-out;
+    }
+    .lupa{
+        margin-left: -7%;
+        transition: all .3s ease-in-out;
+    }
+    .main form input[value="Cadastrar"]{
+        width: 100px;
+        transition: all .3s ease-in-out;
+    }
+    .main form input[value="Entrar"]{
+        width: 70px;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 620px){
+
+    .main form input[name="pesquisa"]{ 
+        width: 40vw;
+        transition: all .3s ease-in-out;
+    }
+    .lupa{
+        margin-left: -7%;
+        transition: all .3s ease-in-out;
+    }
+    .main form input[value="Cadastrar"]{
+        width: 100px;
+        transition: all .3s ease-in-out;
+    }
+    .main form input[value="Entrar"]{
+        width: 70px;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .main form input[name="pesquisa"]{ 
+        width: 40vw;
+        transition: all .3s ease-in-out;
+    }
+    .lupa{
+        margin-left: -10%;
+        transition: all .3s ease-in-out;
+    }
+    .main form input[value="Cadastrar"]{
+        width: 20%;
+        font-size: 1rem;
+        transition: all .3s ease-in-out;
+    }
+    .main form input[value="Entrar"]{
+        width: 15%;
+        font-size: 1rem;
+        transition: all .3s ease-in-out;
+    }
+}
