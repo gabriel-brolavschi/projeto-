@@ -26,6 +26,9 @@
         </div>
 
         <form method="post" action ="loginprocessa.php">
+            <div class="alerta2">
+                Login ou Senha incorreto(a).
+            </div>
             <label for="name">
                 <span>E-MAIL</span>
                 <input type="text" id="email" name="email">
@@ -34,7 +37,7 @@
                 <span>SENHA</span>
                 <input type="password" id="senha" name="senha">
             </label>
-            <input type="submit" value="Entrar"> <a href="index.html"><input type="button" value="Cadastrar"></a>
+            <input type="submit" value="Entrar"> <a href="index.php"><input type="button" value="Cadastrar"></a>
         </form> 
     </section>
     <section class="images-container">

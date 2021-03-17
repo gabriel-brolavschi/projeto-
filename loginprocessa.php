@@ -1,5 +1,4 @@
 <?php 
-
 include_once("conexao.php");
 
 $email = $_POST['email'];
@@ -30,9 +29,10 @@ mysqli_close($conexao);
         <?php 
         
             if($linhas == 1){
-                print "encontramos";
+                $_SESSION['email'] = $email;
+                header('Location: perfil.php');
             }else{
-                print "deu ruim";
+                header('Location: login2.php');
             }
 
         ?>

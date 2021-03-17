@@ -24,8 +24,8 @@
         <form action ="">
             <input type="text" id="pesquisa" name="pesquisa">
             <img src="logos/lupa.png" alt="lupa" class="lupa">
-            <a href="login.html"><input type="button" value="Entrar"></a>
-            <a href="index.html"><input type="button" value="Cadastrar"></a>
+            <a href="login.php"><input type="button" value="Entrar"></a>
+            <a href="index.php"><input type="button" value="Cadastrar"></a>
         </form>  
         </section>
     </section>
